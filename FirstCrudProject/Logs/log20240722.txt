@@ -1,0 +1,14 @@
+2024-07-22 10:08:47.767 +05:45 [ERR] Connection ID "18158513724132950021", Request ID "40000006-0006-fc00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream.ValidateState(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.HttpResponseStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.WrappingStream.WriteAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserScriptMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.InvokeCore(HttpContext context, PathString matchedPath, PathString remainingPath)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2024-07-22 10:28:27.163 +05:45 [INF] EmployeeService - CreateEmployee, Successfull Created
+2024-07-22 10:28:54.709 +05:45 [INF] EmployeeService - DeleteEmployee, Successfull Deleted
+2024-07-22 10:35:49.251 +05:45 [INF] EmployeeService - EditEmployee, Successfull Edited
+2024-07-22 10:38:03.754 +05:45 [INF] EmployeeService - CreateEmployee, Successfull Created
